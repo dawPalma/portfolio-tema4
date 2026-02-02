@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Diseño y Desarrollo Web">
+    <title>Portafolio Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="assets/icons/github.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#inicio" class="logo">JoseDev</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+                    <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">¡Hola! Soy <span class="highlight">Jose</span></h1>
+                <p class="hero__description">Desarrollador Web Full Stack apasionado por crear experiencias digitales
+                    modernas, accesibles y con pixel-perfect design.</p>
+                <a href="#proyectos" class="btn btn--primary">Ver Mis Trabajos</a>
+            </div>
+        </section>
+
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi" class="section about">
+            <div class="container about__container">
+                <div class="about__text">
+                    <h2 class="section__title">Sobre mí</h2>
+                    <p>Con más de 3 años de experiencia en el desarrollo web, me especializo en HTML, CSS y
+                        diseño UI/UX. Me encanta resolver problemas complejos con soluciones simples y eficientes.</p>
+                    <p>Cuando no estoy programando, disfruto explorando nuevas tendencias de diseño y contribuyendo a
+                        proyectos de código abierto.</p>
+                </div>
+                <div class="about__image-wrapper">
+
+                    <img src="assets/img/Perfil.png" alt="Foto de perfil de Jose" class="about__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="section projects">
+            <div class="container">
+                <h2 class="section__title">Mis Proyectos</h2>
+                <div class="projects__grid">
+
+                    <article class="project-card">
+                        <div class="project-card__image-container">
+                            <picture>
+                                <source srcset="assets/img/project1.avif" type="image/avif">
+                                <img src="assets/img/project1.png" alt="Vista previa del Proyecto Alpha"
+                                    class="project-card__image">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-Commerce Moderno</h3>
+                            <p class="project-card__description">Plataforma de comercio electrónico rápida y responsive,
+                                diseñada con enfoque mobile-first.</p>
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+                        <div class="project-card__image-container">
+                            <picture>
+                                <source srcset="assets/img/project2.webp" type="image/webp">
+                                <img src="assets/img/project1.png" alt="Vista previa del blog personal"
+                                    class="project-card__image">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Blog Personal</h3>
+                            <p class="project-card__description">Un blog minimalista optimizado para SEO y velocidad de
+                                carga, con modo oscuro integrado.</p>
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+                        <div class="project-card__image-container">
+
+                            <img src="assets/img/project3.png" alt="Dashboard de Analíticas"
+                                class="project-card__image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Dashboard Admin</h3>
+                            <p class="project-card__description">Panel de administración intuitivo para gestión de datos
+                                en tiempo real.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section contact">
+            <div class="container contact__container">
+                <h2 class="section__title">Contacto</h2>
+                <form class="contact__form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input"
+                            placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" class="form-input"
+                            placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; 2026 JoseDev Portafolio. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <img src="assets/icons/github.svg" alt="Icono GitHub" class="social-icon">
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <img src="assets/icons/linkedin.svg" alt="Icono LinkedIn" class="social-icon">
+                </a>
+                <a href="#" class="social-link" aria-label="Email">
+                    <img src="assets/icons/email.svg" alt="Icono Email" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
