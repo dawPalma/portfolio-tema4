@@ -6,7 +6,7 @@
 utilizando exclusivamente HTML y CSS, implementando diseño responsive, modo oscuro y animaciones avanzadas.
 
 ## 🔗 [https://portfolio-tema4.vercel.app/](https://portfolio-tema4.vercel.app/)
-[Enlace a Vercel aquí]
+[https://portfolio-tema4.vercel.app/](https://portfolio-tema4.vercel.app/)
 
 ---
 
